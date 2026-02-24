@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/cc.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crimson Castle | Online Ordering Platform for Home Chefs</title>
+
+  <meta name="description"
+content="Crimson Castle gives Home Chefs their own store and the tools to run their business from home." />
+
+  <meta property="og:image" content="https://crimsoncastle.biz/social.jpg" />
+  <meta name="twitter:card" content="summary_large" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#f43f5e" />
+  <link rel="canonical" href="https://crimsoncastle.biz/" />
+
+  <script type="module">
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.media = 'print'; // avoids render-blocking
+    link.onload = () => { link.media = 'all'; };
+    document.head.appendChild(link);
+  </script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Crimson Castle",
+  "url": "https://crimsoncastle.biz",
+  "image": "https://crimsoncastle.biz/cc.jpg",
+  "description": "Crimson Castle gives Home Chefs their own store and the tools to run their business from home.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "0",
+    "highPrice": "4.99",
+    "offerCount": "2",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Free Plan",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Pro Plan",
+        "price": "4.99",
+        "priceCurrency": "USD"
+      }
+    ]
+  }
+}
+</script>
+ 
+
+
+  
+
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.jsx"></script>
+
+</body>
+
+</html>

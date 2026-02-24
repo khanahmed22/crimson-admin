@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+/* Default variables (fallbacks) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --accent-color: #f43f5e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Apply variables to the page */
+@layer base {
+  html, body {
+    height: 100%;
+  }
+  body {
+    @apply min-h-screen;
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+  .maplibregl-popup-content {
+    @apply bg-transparent! shadow-none! p-0! rounded-none!;
+  }
+  .maplibregl-popup-tip {
+    @apply hidden!;
+  }
+}
+
+/* Example utility that uses the accent color */
+.btn-accent {
+  background: var(--accent-color);
+  color: white;
+}
+
+@layer base {
+  button:not([disabled]),
+  [role="button"]:not([disabled]) {
+    cursor: pointer;
+  }
+}
+
+/* Add this in index.css */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-pulse {
+  animation: fadeIn 0.3s ease-in-out, pulse 2s infinite;
+}
+
+@layer utilities {
+  .slide-in {
+    animation: slide-in 0.25s ease-out forwards;
+  }
+
+  .slide-out {
+    animation: slide-out 0.25s ease-in forwards;
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-out {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+}
+
+/*For the opening text*/
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fade-up 0.6s ease-out both;
+  }
+}
+
+/*Entrance Animation of Home Page*/
+
+@keyframes scale-fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@layer utilities {
+  .animate-scale-fade-in {
+    animation: scale-fade-in 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  }
+}

@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /sign-in
+Allow: /privacy-policy
+Allow: /refund-policy
+Allow: /terms-conditions
+Allow: /cancellation-policy
+Allow: /delivery-policy
+
+Disallow: /account
+Disallow: /dashboard
+
+
+
+Sitemap: https://crimsoncastle.biz/sitemap.xml
