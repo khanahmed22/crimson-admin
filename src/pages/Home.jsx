@@ -483,15 +483,16 @@ rounded-xl">
             </div>
 
             {/* Carousel Controls */}
-            <div className="flex items-center justify-center gap-4 mt-8">
+            <div className="flex items-center justify-center gap-6 mt-8">
               <button
+                id="previousSlideButton" title="Previous Slide Button"
                 onClick={prevSlide}
                 className="p-3 rounded-full bg-[#b1111c] text-white hover:bg-[#931017] transition-colors"
               >
                 <ChevronLeft size={24} />
               </button>
 
-              <div className="flex gap-2">
+              <div className="flex gap-3">
                 {features.map((_, idx) => (
                   <button
                     key={idx}
@@ -504,6 +505,7 @@ rounded-xl">
               </div>
 
               <button
+                id="nextSlideButton" title="Next Slide Button"
                 onClick={nextSlide}
                 className="p-3 rounded-full bg-[#b1111c] text-white hover:bg-[#931017] transition-colors"
               >
