@@ -495,6 +495,7 @@ rounded-xl">
               <div className="flex gap-3">
                 {features.map((_, idx) => (
                   <button
+                    
                     key={idx}
                     id="slideSelectorButton" title="Slide Selector Button"
                     onClick={() => setCurrent(idx)}
@@ -1029,7 +1030,9 @@ rounded-xl">
           </div>
 
           <div className="border-t border-border mt-8 pt-8 text-center">
+            
             <p className="text-xs sm:text-sm text-muted-foreground">&copy; 2026 Crimson Castle. All rights reserved. </p>
+            <p className="text-sm mt-2 font-semibold">Built in Pakistan</p>
           </div>
         </div>
       </footer>
@@ -1037,4 +1040,3 @@ rounded-xl">
     </div>
   );
 }
-
