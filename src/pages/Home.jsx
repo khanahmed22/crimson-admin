@@ -496,6 +496,7 @@ rounded-xl">
                 {features.map((_, idx) => (
                   <button
                     key={idx}
+                    id="slideSelectorButton" title="Slide Selector Button"
                     onClick={() => setCurrent(idx)}
                     className={`w-3 h-3 rounded-full transition-colors ${
                       idx === current ? "bg-[#b1111c]" : "bg-[#d1d5db]"
@@ -1036,3 +1037,4 @@ rounded-xl">
     </div>
   );
 }
+
