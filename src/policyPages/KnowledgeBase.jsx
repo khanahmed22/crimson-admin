@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Search, ChevronDown, Settings, ShoppingCart, Package, BarChart3, Truck, Tag, Users, Folder, User, HelpCircle } from 'lucide-react'
 import { Input } from '@/components/ui/input'
-import TawkTo from '@/lib/tawkto'
+
 
 const knowledgeBaseItems = [
   {
@@ -29,6 +29,7 @@ const knowledgeBaseItems = [
       'Add Meta Title and Meta Description for SEO',
       'Set Store Currency',
       'Enable or disable Pre orders and time slots',
+      
     ],
   },
   {
@@ -38,7 +39,7 @@ const knowledgeBaseItems = [
     description: 'Manage customer orders with different statuses',
     content: [
       'New Orders are marked "Pending" by default in the New Tab',
-      'Mark orders as "Confirmed" to show in Processing Tab',
+      'Mark orders as "Confirmed"  show in Processing Tab',
       'Orders marked "Dispatched" show in Dispatched Tab',
       'Orders marked "Pick Up" show in Pick Up Tab',
       'Completed orders show in Completed Tab',
@@ -46,6 +47,8 @@ const knowledgeBaseItems = [
       'All Orders Tab shows all orders list',
       'Search through Orders by Order No',
       'Disable Ordering when needed',
+      '',
+      'Note: The quantity of items in orders marked as Delivered or Picked Up (these statuses represent order completion) will be automatically deducted from inventory. For example, if 1 Zinger Burger is marked as Picked Up or Delivered, then 1 unit of Zinger Burger will be subtracted from the inventory of Zinger Burgers.',
     ],
   },
   {
@@ -75,7 +78,7 @@ const knowledgeBaseItems = [
       '  • Stock Amount',
       '  • Food Image',
       '',
-      'Note: Price and Base Cost can be left blank if the item has variants (Small, Medium, Large) as each variant has its own price.',
+      'Note: Price and Base Cost Price can be left blank if the item has variants (for e.g: Small, Medium, Large) as each variant has its own Price and Base Cost Price.',
     ],
   },
   {
@@ -87,9 +90,7 @@ const knowledgeBaseItems = [
       'Track Revenue, Profit Margin and actual profit',
       'See which items are selling the most',
       'View stock distribution at a glance',
-      'Monitor daily/weekly/monthly trends',
-      'Analyze customer behavior',
-      'Track order completion rates',
+      
     ],
   },
   {
@@ -118,7 +119,7 @@ const knowledgeBaseItems = [
     title: 'Customers',
     icon: Users,
     description: 'View all registered customers',
-    content: 'View all customers who have signed up to your restaurant. Access their information, order history, and contact details.',
+    content: 'View all customers who have signed up to your restaurant. Access their information, and contact details.',
   },
   {
     id: 'category-manager',
@@ -194,11 +195,7 @@ export default function KnowledgeBase() {
     item.description.toLowerCase().includes(searchQuery.toLowerCase())
   )
 
-  const openSupport = () => {
-    if (window.Tawk_API) {
-      window.Tawk_API.maximize();
-    }
-  };
+  
 
   return (
     <div className="min-h-screen bg-[#f8f9fa]">
@@ -264,9 +261,12 @@ export default function KnowledgeBase() {
               <p className="text-[#666666] mb-4">
                 Can't find what you're looking for? Our support team is here to help.
               </p>
-              <button onClick={openSupport}  className="px-6 py-2 bg-[#a53122] text-white rounded-lg hover:bg-[#b35347] transition-colors">
-                Contact Support
-              </button>
+              <a
+                  href="mailto:support@crimsoncastle.biz"
+                  className="hover:text-foreground transition-colors flex items-center gap-x-1 text-sm font-semibold"
+                >
+                  Email Us : support@crimsoncastle.biz
+                </a>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-[#1a1a1a] mb-3">Quick Tips</h3>
@@ -280,7 +280,7 @@ export default function KnowledgeBase() {
           </div>
         </div>
       </div>
-      <TawkTo/>
+     
     </div>
   )
 }
