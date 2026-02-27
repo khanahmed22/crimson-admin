@@ -161,9 +161,9 @@ export default function MerchantReg() {
 
         <form className="grid md:grid-cols-2 gap-6">
           <div className="space-y-2">
-            <Label>Kitchen Name</Label>
+            <Label>Business Name</Label>
             <Input
-              placeholder="Enter your kitchen name"
+              placeholder="Enter your Business name"
               value={form.business_name}
               onChange={(e) =>
                 setForm({ ...form, business_name: e.target.value })
