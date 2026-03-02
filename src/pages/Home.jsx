@@ -765,23 +765,33 @@ rounded-xl">
             {[
               {
                 value: "item-1",
-                q: "How long does it take to get setup?",
-                a: "Setup usually takes between 24 hours, depending on the complexity of your menu and how quickly required details are finalized.",
+                q: "What is Crimson Castle?",
+                a: "Crimson Castle helps Home Chefs run their entire food business from one simple dashboard.Launch your own branded online store, manage orders in one place, and stay organized with tools designed specifically for home-based kitchens. With AI-powered menu setup and a clean, distraction-free workflow, Crimson Castle removes the chaos so you can focus on cooking, serving customers, and growing your sales.",
               },
               {
                 value: "item-2",
+                q: "How long does it take to get setup?",
+                a: "Setup typically takes around 24 hours, depending on when the Merchant Registration form is submitted from Dashboard.",
+              },
+              {
+                value: "item-3",
                 q: "Can I cancel the service at any time?",
                 a: "Yes. You may cancel your subscription at any time. There are no long-term contracts or cancellation penalties.",
               },
               {
-                value: "item-3",
+                value: "item-4",
                 q: "Are there any hidden or additional fees?",
                 a: "There are no mandatory hidden fees.",
               },
               {
-                value: "item-4",
+                value: "item-5",
                 q: "Do you handle food delivery?",
                 a: "No. The platform provides online ordering only. Delivery is handled by you.",
+              },
+              {
+                value: "item-6",
+                q: "Where are you based?",
+                a: "Crimson Castle is a proud Pakistani brand based in Karachi.",
               },
             ].map((item) => (
               <AccordionItem
