@@ -770,29 +770,35 @@ rounded-xl">
               },
               {
                 value: "item-2",
+                q: "Where are you based?",
+                a: "Crimson Castle is a proud Pakistani brand based in Karachi.",
+              },
+              {
+                value: "item-3",
                 q: "How long does it take to get setup?",
                 a: "Setup typically takes around 24 hours, depending on when the Merchant Registration form is submitted from Dashboard.",
               },
               {
-                value: "item-3",
+                value: "item-4",
                 q: "Can I cancel the service at any time?",
                 a: "Yes. You may cancel your subscription at any time. There are no long-term contracts or cancellation penalties.",
               },
               {
-                value: "item-4",
+                value: "item-5",
                 q: "Are there any hidden or additional fees?",
                 a: "There are no mandatory hidden fees.",
               },
               {
-                value: "item-5",
+                value: "item-6",
                 q: "Do you handle food delivery?",
                 a: "No. The platform provides online ordering only. Delivery is handled by you.",
               },
               {
-                value: "item-6",
-                q: "Where are you based?",
-                a: "Crimson Castle is a proud Pakistani brand based in Karachi.",
+                value: "item-7",
+                q: "Does Crimson Castle work in Karachi?",
+                a: "Yes, Crimson Castle is currently focused on home chefs in Karachi only for now.",
               },
+              
             ].map((item) => (
               <AccordionItem
                 key={item.value}
