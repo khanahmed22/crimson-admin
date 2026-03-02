@@ -691,7 +691,7 @@ rounded-xl">
                   </CardTitle>
                   <div className="mt-4">
                     <span className="text-4xl max-md:text-2xl  font-bold">
-                      Rs.1400
+                      Rs.1399
                     </span>
                     <span className="text-muted-foreground">/month</span>
                   </div>
@@ -1056,3 +1056,4 @@ rounded-xl">
     </div>
   );
 }
+
