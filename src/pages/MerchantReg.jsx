@@ -156,8 +156,9 @@ export default function MerchantReg() {
     <div className="min-h-screen p-4 bg-gradient-to-br from-orange-50 via-red-50 to-pink-50">
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow p-8">
         <h1 className="text-3xl font-bold mb-8">
-          Home Chef Registration
+          Home Chef Registration 
         </h1>
+        <span className="font-semibold mt-2">Note: We are only accepting applications from Karachi right now</span>
 
         <form className="grid md:grid-cols-2 gap-6">
           <div className="space-y-2">
@@ -224,7 +225,7 @@ export default function MerchantReg() {
           <div className="md:col-span-2 space-y-2">
             <Label>Area / Address</Label>
             <Textarea
-              placeholder="Enter area (e.g. Gulshan Block 7, Karachi)"
+              placeholder="Enter only area (e.g. Gulshan e Iqbal, Karachi)"
               value={form.address}
               onChange={(e) =>
                 setForm({ ...form, address: e.target.value })
