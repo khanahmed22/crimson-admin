@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { supabase } from "../db/supabase";
 import { useNavigate } from "react-router";
-import { toast } from "sonner";
 import { Label } from "@radix-ui/react-label";
 import { Eye, EyeOff, FlaskRound } from "lucide-react";
 import { useAuth } from "@/store/authStore";
@@ -17,6 +16,8 @@ export default function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const { session } = useAuth();
+
+
 
 
   // Password validation rules
@@ -59,7 +60,7 @@ export default function SignUp() {
     return;
   }
 
-  toast.success("Check your email to verify your account");
+  alert("Please check your inbox (and spam/junk folder) for a verification email to activate your account.");
   setLoading(false);
 };
 
