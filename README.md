@@ -1,10 +1,21 @@
-
 # Crimson Castle Admin App
 
 A complete business management platform built for home chefs.  
 Manage orders, inventory, customers, delivery operations, analytics, and store customization from one centralized dashboard — without relying on scattered WhatsApp, Instagram, or Facebook messages.
 
 **Keep 100% of your earnings. No commissions.**
+
+---
+
+## Live Website
+
+https://crimsoncastle.biz/
+
+---
+
+## Demo Video
+
+https://www.youtube.com/watch?v=gFH15YnGEZ8&t=6s
 
 ---
 
@@ -24,6 +35,14 @@ Home chefs often struggle with:
 ---
 
 # Features
+
+## Online Storefront
+
+Every home chef gets their own professional online storefront where customers can browse menus and place orders directly.
+
+![Online Store](https://iili.io/BDq6Ncu.png)
+
+---
 
 ## Order Management
 
@@ -127,4 +146,3 @@ View and manage customers who sign up through your store.
 Crimson Castle aims to help home chefs operate like modern digital businesses without paying marketplace commissions or depending entirely on social media inboxes.
 
 The platform gives home chefs full ownership of their customers, branding, and revenue while simplifying day-to-day operations.
-```
