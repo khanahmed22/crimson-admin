@@ -2,8 +2,8 @@
 
 Crimson Castle is split into two interconnected systems:
 
-- **Crimson Client App**: Handles customer interactions including ordering, menus, and order tracking.
-- **Crimson Admin App**: Handles platform operations such as user management, order moderation, analytics, and payouts.
+- **Crimson Client App**: Handles customer interactions including ordering, menus, and order tracking. Visit here: https://github.com/khanahmed22/crimson-client-next-v2
+- **Crimson Admin App**: Handles platform operations such as user management, order moderation, analytics, and payouts.(This one)
 
 # Crimson Castle Admin App
 
