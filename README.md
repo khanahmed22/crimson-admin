@@ -1,7 +1,15 @@
+## Crimson Castle System Architecture
+
+Crimson Castle is split into two interconnected systems:
+
+- **Crimson Client App**: Handles customer interactions including ordering, menus, and order tracking.
+- **Crimson Admin App**: Handles platform operations such as user management, order moderation, analytics, and payouts.
+
 # Crimson Castle Admin App
 
 A complete business management platform built for home chefs.  
 Manage orders, inventory, customers, delivery operations, analytics, and store customization from one centralized dashboard — without relying on scattered WhatsApp, Instagram, or Facebook messages.
+
 
 **Keep 100% of your earnings. No commissions.**
 
